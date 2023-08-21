@@ -7,44 +7,69 @@
     
 <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
+<!-- goggle font poppins -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,400;0,500;0,700;1,600&family=Roboto:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
 </head>
+<!-- tailwind custom classes -->
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          clifford: '#da373d',
+          'bike-primary':'#E76F51'
+        }
+      }
+    }
+  }
+</script>
+<style>
+ 
+  /* custom style */
+  .font-poppins{
+    font-family: 'Bebas Neue', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+  }
+</style>
 
 
-
-<body>
-<header>
+<body class="font-poppins">
+<header class="md:container md:mx-auto">
 <nav>
     <div class="navbar bg-base-100">
-  <div class="navbar-start">
+  <div class="flex-1">
     <div class="dropdown">
       <label tabindex="0" class="btn btn-ghost lg:hidden">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
       </label>
-      <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+      <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 text-base shadow bg-base-100 rounded-box w-52">
         <li><a>Home</a></li>
         <li><a>Shop</a></li>
         <li><a>News</a></li>
         <li><a>Contat</a></li>
       </ul>
     </div>
-    <a class="btn btn-ghost normal-case text-xl">Biker zone</a>
+    <a class="btn btn-secondary normal-case text-4xl text-white">Biker zone</a>
   </div>
   <div class="navbar-center hidden lg:flex">
-    <ul class="menu menu-horizontal px-1">
+    <ul class="menu text-base menu-horizontal px-1">
         <li><a>Home</a></li>
         <li><a>Shop</a></li>
         <li><a>News</a></li>
         <li><a>Contact</a></li>
     </ul>
   </div>
-  <div class="navbar-end">
-    <a class="btn">Login</a>
+  <div class=" ">
+    <a class="btn btn-primary h-16 w-40 bg-bike-primary">Login</a>
   </div>
 </div>
 </nav>
 </header>
 
-<main>
+<main class="md:container md:max-auto">
 
 </main>
 
